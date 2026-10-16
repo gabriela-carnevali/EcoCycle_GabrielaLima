@@ -5,7 +5,8 @@ function Header() {
 
   return (
     <header className="header">
-      {/* TODO T3: <h1>♻ EcoCycle</h1> e <p>Coleta seletiva que vale a pena</p> */}
+      <h1>♻ EcoCycle</h1>
+      <p>Coleta seletiva que vale a pena</p>
       {/* TODO T11: <p>Coletado: {totalKg} kg · Valor: {valorFormatado}</p> */}
       {/* TODO T12 (desafio): botão "Zerar coleta" com className="btn-secundario" e onClick={onLimpar} */}
     </header>
