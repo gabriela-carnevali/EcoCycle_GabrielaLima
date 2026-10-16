@@ -1,5 +1,4 @@
-// TODO T12 (desafio): receba também onLimpar
-function Header({totalKg, totalValor}) {
+function Header({totalKg, totalValor, onLimpar}) {
   const valorFormatado = totalValor.toLocaleString("pt-BR", {
     style: "currency",
     currency: "BRL",
@@ -10,7 +9,9 @@ function Header({totalKg, totalValor}) {
       <h1>♻ EcoCycle</h1>
       <p>Coleta seletiva que vale a pena</p>
       <p>Coletado: {totalKg} kg · Valor: {valorFormatado}</p>
-      {/* TODO T12 (desafio): botão "Zerar coleta" com className="btn-secundario" e onClick={onLimpar} */}
+      <button type="button" className="btn-secundario" onClick={onLimpar}>
+        Zerar coleta
+      </button>
     </header>
   );
 }
